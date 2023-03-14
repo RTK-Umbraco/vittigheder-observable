@@ -1,0 +1,11 @@
+<div>
+    <button (click)="onClick()">
+      Get joke
+    </button>
+  
+    <p *ngIf="(joke$ | async) as joke"> 
+        {{joke.joke}}...</p>
+
+    <p *ngIf="(punchline$ | async) as joke"> 
+        {{joke.jokePunchline}}</p>
+  </div>
